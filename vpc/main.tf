@@ -1,9 +1,9 @@
 terraform {
     backend "s3" {
-  bucket         = "zen-infra-project-tfstate-bde3a954"
+  bucket         = "zen-infra-project-tfstate-460a2b20"
   key            = "monitoring/terraform.tfstate"
   region         = "us-east-1"
-  dynamodb_table = "zen-infra-project-tfstate-locks"
+  use_lockfile = true
   encrypt        = true
 }
     required_providers {
