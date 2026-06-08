@@ -1,7 +1,7 @@
 terraform {
     backend "s3" {
   bucket         = "zen-infra-project-tfstate-460a2b20"
-  key            = "monitoring/terraform.tfstate"
+  key            = "vpc/terraform.tfstate"
   region         = "us-east-1"
   use_lockfile = true
   encrypt        = true
