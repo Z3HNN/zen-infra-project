@@ -25,12 +25,12 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-        working-directory: infra/ec2
+        working-directory: ec2
 
       - name: Terraform Plan
         run: terraform plan
-        working-directory: infra/ec2
+        working-directory: ec2
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
-        working-directory: infra/ec2
+        working-directory: ec2
