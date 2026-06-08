@@ -25,12 +25,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-      - name: Deploy Backend
-        working-directory: backend
-        run: |
-          terraform init
-          terraform apply -auto-approve
-
       - name: Deploy VPC
         working-directory: vpc
         run: |
